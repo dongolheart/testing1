@@ -1,0 +1,61 @@
+.custom-card-img:hover img{
+    transform: scale(1.5);
+}
+.custom-card-img{
+    overflow: hidden;
+}
+.custom-card-img img{
+    transition: all 3s;
+}
+*
+{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+
+ font-family: 'poppins', sans-serif;   
+}
+
+
+
+.header{
+    
+    display: flex;
+    justify-content:center;
+    height:100%;
+   
+}
+.center_div{
+   
+    place-content: center;
+}
+h5{
+    color: blanchedalmond;
+    font-size: 2rem;
+    text-transform: uppercase;
+    position: relative;
+}
+h5::before{
+    content: "picnic";
+    width: 100%;
+    color: #2ed573;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: .4rem solid #2ed573;
+    animation: slide 3s linear infinite;
+    -webkit-animation:slide 3s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes slide{
+    0%{
+        width: 0%;
+    }
+    50%{
+        width:100%;
+    }
+    100%{
+            width: 0%;
+    }
+}
